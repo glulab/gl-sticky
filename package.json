@@ -1,0 +1,19 @@
+{
+  "name": "@glulab/gl-sticky",
+  "version": "1.0.0",
+  "description": "Adds sticky class on scroll.",
+  "main": "js/gl-sticky.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glulab/gl-sticky.git"
+  },
+  "author": "Lukasz Gaszyna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glulab/gl-sticky/issues"
+  },
+  "homepage": "https://github.com/glulab/gl-sticky#readme"
+}
