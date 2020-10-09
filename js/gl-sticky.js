@@ -11,6 +11,7 @@ export class GlSticky {
         
         this.defaults = {
             el: 'body',
+            active: false,
             className: 'is-sticky',
             stickedClassName: 'is-sticked',
             toggleTriggerPoint: 185,
@@ -85,12 +86,15 @@ export class GlSticky {
         // preparing
         this.$el = $(this.el);
         
-        this.measure = true;
         this.sticked = false;
     }
     
     run() {
         this.consoleLog('run [' + $().jquery + ']');
+        
+        if (!this.active) {
+            return;
+        }
         
         this.$el.addClass(this.className);
         this.addCheckOnScroll();
@@ -120,7 +124,7 @@ export class GlSticky {
     }
     
     actionOnScroll() {
-        if (!this.measure) {
+        if (!this.active) {
             return;
         }
         
