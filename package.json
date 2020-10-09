@@ -1,6 +1,6 @@
 {
   "name": "@glulab/gl-sticky",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adds sticky class on scroll.",
   "main": "js/gl-sticky.js",
   "scripts": {

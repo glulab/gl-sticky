@@ -85,8 +85,6 @@ export class GlSticky {
         
         // preparing
         this.$el = $(this.el);
-        
-        this.sticked = false;
     }
     
     run() {
@@ -96,8 +94,11 @@ export class GlSticky {
             return;
         }
         
+        this.sticked = false;
+        
         this.$el.addClass(this.className);
         this.addCheckOnScroll();
+        this.scrollCheck();
     }
     
     addCheckOnScroll() {
